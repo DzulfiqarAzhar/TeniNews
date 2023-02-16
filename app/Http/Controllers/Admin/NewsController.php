@@ -52,14 +52,19 @@ class NewsController extends Controller
 
         $validator = Validator::make($request->all(), $rules);
 
+        // $uplProc = new UploadController();
+        // $contentFile   = $uplProc->prepareUpload($request, 'fileUpload', 'image');
+
         if ($validator->validated()) {
             $news = new News([
                 'title' => $request->title,
                 'category_id' => $request->category,
                 'news_content' => $request->content,
+                //'content_file' => $contentFile,
                 'release_date' => $request->releaseDate
             ]);
             \Log::info($news);
+            // if ($uplProc->processUpload($request->file('fileUpload'), $contentFile, 'file') == 0)
             $news->save();
             return redirect()->route('news.index');
         }
