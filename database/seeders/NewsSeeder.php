@@ -22,5 +22,21 @@ class NewsSeeder extends Seeder
             'content_file'      =>  NULL,
             'release_date'  =>  '2023-01-18'
         ]);
+
+        News::create([
+            'category_id'          =>  1,
+            'title'         =>  'test asik',
+            'news_content'  =>  'ini hanya test saja',
+            'content_file'      =>  NULL,
+            'release_date'  =>  '2023-01-18'
+        ]);
+
+        News::create([
+            'category_id'          =>  1,
+            'title'         =>  'test gokil',
+            'news_content'  =>  'ini hanya test doang',
+            'content_file'      =>  NULL,
+            'release_date'  =>  '2023-01-18'
+        ]);
     }
 }

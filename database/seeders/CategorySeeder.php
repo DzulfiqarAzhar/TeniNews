@@ -18,5 +18,13 @@ class CategorySeeder extends Seeder
         Category::create([
             'category_name'          =>  'Default',
         ]);
+
+        Category::create([
+            'category_name'          =>  'Selebriti',
+        ]);
+
+        Category::create([
+            'category_name'          =>  'Politik',
+        ]);
     }
 }

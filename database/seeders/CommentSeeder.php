@@ -21,5 +21,26 @@ class CommentSeeder extends Seeder
             'comment'      =>  'test dulu lah',
             'locked'    =>  0,
         ]);
+
+        Comment::create([
+            'name'          =>  'Test Dulu',
+            'news_id'         =>  1,
+            'comment'      =>  'test juga lah',
+            'locked'    =>  0,
+        ]);
+
+        Comment::create([
+            'name'          =>  'Test Bentar',
+            'news_id'         =>  2,
+            'comment'      =>  'test bentar dah',
+            'locked'    =>  0,
+        ]);
+
+        Comment::create([
+            'name'          =>  'Test Lagi',
+            'news_id'         =>  3,
+            'comment'      =>  'test lagi deh',
+            'locked'    =>  0,
+        ]);
     }
 }
